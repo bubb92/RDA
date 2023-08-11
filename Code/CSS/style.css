@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0; 
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+}
+
+.container{
+  /* background: linear-gradient(#ddd 50%, crimson 50.1%); */
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container .box-container{
+  /* max-width: 1200px;  */
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    /* gap: 20px; */
+}
+
+/* .container .box-container .box{
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+} */
+
+/* .container .box-container .box:nth-child(2){
+  border:2px solid #000;
+}
+
+.container .box-container .box:nth-child(2) .btn{
+  background: crimson;
+} */
+
+.container .box-container .box:nth-child(2) .btn:hover{
+  background: #444;
+}
+.container .box-container .box1 .list{
+  margin-top: 32.5px;
+}
+.container .box-container .box h3{
+  font-size: 20px;
+  padding:30px 0;
+  color:#fff;
+  width: 100px;
+  display: inline-block;
+  background-color: #204d92;
+}
+
+.container .box-container .box .price{
+  margin-top: 10%;
+}
+
+.container .box-container .box .price.year{
+  display: none;
+}
+
+.container .box-container .box .list{
+  margin:20px 0;
+}
+
+.container .box-container .box .list p{
+  padding:12px 0;
+  font-size: 17px;
+  color:#666;
+  border-bottom: 1px solid black;
+}
+.container .box-container .box1 .list p{
+  padding:12px 0;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+  /* color:#666; */
+}
+
+.container .box-container .box .list p i{
+  padding-right: 5px;
+  color:crimson;
+}
+
+.container .box-container .box1 .price{
+  margin-top: 10%;
+}
+
+.container .box-container .box .btn{
+  margin:20px;
+  display: block;
+  font-size: 17px;
+  background: #444;
+  color:#fff;
+  padding:10px;
+}
+
+.container .box-container .box .btn:hover{
+  background: crimson;
+}
+
+.container .price-toggler{
+  margin-top: 20px;
+  display: flex;
+  padding:5px;
+  border:2px solid #204d92;
+  background: #204d92;
+  border-radius: 30px;
+}
+
+.container .price-toggler span{
+  padding:7px 30px;
+  cursor: pointer;
+  color:#fff;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.container .price-toggler span.active{
+  color: #204d92;
+    background-color: white;
+    border-radius: 30px;
+}
+
+@media (max-width:450px){
+  .container .box-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+#red.highlight p {
+  color:red;
+}
+
+#green.highlight p {
+  color: green;
+}
